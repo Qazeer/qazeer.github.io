@@ -4,4 +4,80 @@ author_profile: true
 classes:
   - wide
   - smallfont
+feature_row:
+  - title: "InfoSec Notes"
+    excerpt: "*Not yet pubblished.* <br><br> Personal notes used as a way to keep trace of my experimentations over the
+    years on attack vectors and digital forensics. <br><br> Accessible at [https://notes.qazeer.io](https://notes.qazeer.io) or [https://github.com/Qazeer/InfoSec-Notes](https://github.com/Qazeer/InfoSec-Notes)."
+  - title: "Projects"
+    excerpt: "Open-source offensive tools I created or had the occassion to contribute to."
+  - title: "Publications"
+    excerpt: "Links to external publications / articles I participated in. <br><br> As a native French speaker, most of the publications are in French."
 ---
+
+<html>
+<body>
+
+  <!-- 3 rows body. -->
+  {% include feature_row %}
+
+  <!-- GitHub contributions figure. -->
+  <div class="text-center">
+    <img src="https://github-readme-stats.vercel.app/api?username=Qazeer&count_private=true" alt="Github stats" class="align-center"/>
+    <br>
+    <img src="http://ghchart.rshah.org/qazeer" alt="Github contributions in the last year" class="align-center"/>
+    <br>
+    <figcaption>Github contributions in the last year.</figcaption>
+  </div>
+
+  <hr>
+  <br>
+
+  <!-- InfoSec Notes recent commits. -->
+  <div id="commits">
+    <span style="font-weight: bold; font-size: 120%;">InfoSec Notes recent commits:</span>
+    <br>
+    <i>Showing self project for now.</i>
+    <br><br>
+    <script src="/assets/js/main.min.js"></script>
+    <script>
+      var username = "Qazeer";
+      var repo = "qazeer.github.io";
+
+      var template_commit_html = `
+      <div>
+        <span><b><a href="{commit_url}" target="_blank">{message}</a></b></span><br>
+        <span><i>{date}</i></span><br>
+        <img src="https://avatars.githubusercontent.com/{author_name}" alt="" width="{avatar_size}" height="{avatar_size}" border-radius="50%"/>
+        <span>{author_name}</span><br>
+        <br>
+      </div>
+      `;
+
+      jQuery.getJSON("https://api.github.com/repos/" + username + "/" + repo + "/commits", function(data) {
+        $.each(data, function(idx, commit) {
+
+          if (idx >= 5) {
+            return false;
+          }
+
+          let commit_info = {
+            "message": commit.commit.message,
+            "commit_url": commit.html_url,
+            "date": commit.commit.author.date,
+            "author_name": commit.commit.author.name,
+             "author_email": commit.commit.author.email.toLowerCase(),
+             "avatar_size": 30,
+          };
+
+          template_parametrized = template_commit_html.replace(/{([^{}]+)}/g, function(keyExpr, key) {
+            return commit_info[key] || "";
+          });
+
+          $('#commits').append(template_parametrized);
+        });
+      });
+    </script>
+  </div>
+
+</body>
+</html>
