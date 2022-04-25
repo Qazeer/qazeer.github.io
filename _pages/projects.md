@@ -34,4 +34,4 @@ Compiled using Docker for Windows, WSL2, and Make.
 ### Other contributions
 
 Occasional contributions to open-source security projects, such as Metasploit,
-Priv2Admin, PingCastle, etc.
+Priv2Admin, KapeFiles, PingCastle, Velociraptor's Artifact Exchange, etc.
