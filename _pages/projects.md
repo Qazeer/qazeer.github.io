@@ -9,20 +9,20 @@ permalink: /projects/
 
 --------------------------------------------------------------------------------
 
-### ADPersistenceHunting toolkit
+### FarsightAD
 
-ADPersistenceHunting is a PowerShell script that implements multiple cmdlets to
+FarsightAD is a PowerShell script that implements multiple cmdlets to
 help detect and investigate Active Directory persistence, following a forest or
-domain compromise. ADPersistenceHunting rely on a mix of reviewing the current
-domain state and getting historical information / timestamps (notably from
-replication meta data) whenever possible.​
+domain compromise. It rely on a mix of reviewing the current domain state and
+getting historical information / timestamps (notably from replication meta
+data) whenever possible.​
 <br><br> Areas of persistence covered: fully or partially hidden objects
 (detected using replication data queried through `DRS`), SIDHistory &
 primaryGroupID persistence, ACL / GPO / AD CS / Kerberos based persistence, ...
 <br> More information on the project will be shared following the
 [SANS DFIR 2022 Summit](https://www.sans.org/cyber-security-training-events/digital-forensics-summit-2022/).
 <br><br>
-<i class="fab fa-fw fa-github" aria-hidden="true"></i> Qazeer/ADPersistenceHunting - To be released following the summit.
+<i class="fab fa-fw fa-github" aria-hidden="true"></i> github.com/Qazeer/FarsightAD - To be released following the summit.
 
 --------------------------------------------------------------------------------
 

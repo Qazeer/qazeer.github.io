@@ -12,7 +12,7 @@ permalink: /publications/
 ### SANS DFIR Summit 2022 - Hunting for Active Directory persistence
 Subject: Brief overview of a forest recovery procedure and focus on unveiling
 different means of Active Directory persistence, some well-known, other less
-so. <br> Introduction of the ADPersistenceHunting toolkit and its inner
+so. <br> Introduction of the FarsightAD toolkit and its inner
 mechanisms. <br><br>
 *August 2022 | [SANS DFIR Summit 2022 abstract](https://www.sans.org/cyber-security-training-events/digital-forensics-summit-2022/)*
 
