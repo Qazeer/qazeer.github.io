@@ -3,9 +3,15 @@ layout: single
 classes:
   - wide
   - smallfont
-title:  "Publications"
+title:  "Publications & talks"
 permalink: /publications/
 ---
+
+--------------------------------------------------------------------------------
+
+### FIC 2023 Hacking Lab - EDRSandBlast : un outil pour repérer et contourner les mécanismes de détection EDR
+*Co-presenter: [Maxime Meignan](https://twitter.com/th3m4ks).<br>*
+*April 2023 | [FIC 2023 Hacking Lab abstract](https://fic.app.swapcard.com/widget/event/fic-2023/planning/UGxhbm5pbmdfMTE5MzAwMg==)*
 
 --------------------------------------------------------------------------------
 
