@@ -49,7 +49,17 @@ Compiled using Docker for Windows, WSL2, and Make.
 
 --------------------------------------------------------------------------------
 
+### DFIR scripts
+
+Various PowerShell or Python scripts to assist and automate tasks during
+digital forensics investigations. <br>
+<br><br>
+<i class="fab fa-fw fa-github" aria-hidden="true"></i> [GitHub Gists](https://gist.github.com/Qazeer)
+
+--------------------------------------------------------------------------------
+
 ### Other contributions
 
 Occasional contributions to open-source security projects, such as Metasploit,
-Priv2Admin, KapeFiles, PingCastle, Velociraptor's Artifact Exchange, etc.
+Priv2Admin, KapeFiles, PingCastle, Velociraptor's Artifact Exchange,
+Microsoft-Extractor-Suite, etc.

@@ -9,6 +9,11 @@ permalink: /certifications/
 
 --------------------------------------------------------------------------------
 
+### 13Cubed - Investigating Windows Endpoints (Gold)
+*Delivered: 2023-06 | [Online badge](https://credsverse.com/credentials/3990e8e2-3848-4ff3-af52-f7d7ff90d6b0)*
+
+--------------------------------------------------------------------------------
+
 ### SANS Institute - GIAC Cloud Forensics Responder (GCFR)
 *Delivered: 2023-02 | [Online badge](https://www.credly.com/badges/c0d30f70-aba1-4d04-9fd1-751078969b16/public_url)*
 
