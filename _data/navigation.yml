@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "artefacts.help"
+    url: https://artefacts.help/
   - title: "InfoSec Notes"
     url: https://notes.qazeer.io/
   - title: "Projects"

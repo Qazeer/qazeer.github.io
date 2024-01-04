@@ -5,11 +5,13 @@ classes:
   - wide
   - smallfont
 feature_row:
+  - title: "art [e | é] facts . help"
+    excerpt: "All about forensics artefacts! <br><br> Accessible at [https://artefacts.help](https://artefacts.help) or [https://github.com/Qazeer/artefacts.help](https://github.com/Qazeer/artefacts.help)."
   - title: "InfoSec Notes"
-    excerpt: "Personal notes used as a way to keep trace of my experimentations over the
+    excerpt: "Personal notes used as a way to keep trace of my experimentation over the
     years on attack vectors and digital forensics. <br><br> Accessible at [https://notes.qazeer.io](https://notes.qazeer.io) or [https://github.com/Qazeer/InfoSec-Notes](https://github.com/Qazeer/InfoSec-Notes)."
   - title: "Projects"
-    excerpt: "Open-source offensive tools I created or had the occassion to contribute to."
+    excerpt: "Open-source offensive tools I created or had the occasion to contribute to."
   - title: "Publications & talks"
     excerpt: "Links to external publications / articles and talks I participated in. <br><br> As a native French speaker, most of the publications are in French."
 ---
@@ -63,8 +65,8 @@ feature_row:
             "commit_url": commit.html_url,
             "date": commit.commit.author.date,
             "author_name": commit.commit.author.name,
-             "author_email": commit.commit.author.email.toLowerCase(),
-             "avatar_size": 30,
+            "author_email": commit.commit.author.email.toLowerCase(),
+            "avatar_size": 30,
           };
 
           template_parametrized = template_commit_html.replace(/{([^{}]+)}/g, function(keyExpr, key) {
