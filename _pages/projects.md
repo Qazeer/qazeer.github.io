@@ -7,6 +7,8 @@ title:  "Projects"
 permalink: /projects/
 ---
 
+Open-source offensive tools I created or had the occasion to contribute to.
+
 --------------------------------------------------------------------------------
 
 ### FarsightAD

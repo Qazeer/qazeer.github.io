@@ -7,6 +7,8 @@ title:  "Publications & talks"
 permalink: /publications/
 ---
 
+Links to external publications / articles and talks I participated in. <br><br> As a native French speaker, most of the publications are in French.
+
 --------------------------------------------------------------------------------
 
 ### BSides Las Vegas 2023 - Linux Digital Forensics: a theoretical and practical approach workshop
