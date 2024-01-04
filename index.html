@@ -6,10 +6,12 @@ classes:
   - smallfont
 feature_row:
   - title: "art [e | é] facts . help"
-    excerpt: "All about forensics artefacts! <br><br> Accessible at [https://artefacts.help](https://artefacts.help) or [https://github.com/Qazeer/artefacts.help](https://github.com/Qazeer/artefacts.help)."
+    excerpt: "All about forensics artefacts!"
   - title: "InfoSec Notes"
     excerpt: "Personal notes used as a way to keep trace of my experimentation over the
-    years on attack vectors and digital forensics. <br><br> Accessible at [https://notes.qazeer.io](https://notes.qazeer.io) or [https://github.com/Qazeer/InfoSec-Notes](https://github.com/Qazeer/InfoSec-Notes)."
+    years on attack vectors and digital forensics."
+  - title: "About"
+    excerpt: "Red / Purple Team & Incident Response Lead at Wavestone (CERT-W)"
 ---
 
 <html>
@@ -30,18 +32,16 @@ feature_row:
   <hr>
   <br>
 
-  <!-- InfoSec Notes recent commits. -->
+  <!-- Qazeer recent commits. -->
   <div id="commits">
-    <span style="font-weight: bold; font-size: 120%;">InfoSec Notes recent commits:</span>
+    <span style="font-weight: bold; font-size: 120%;">Recent commits:</span>
     <br><br>
     <script src="/assets/js/vendor/jquery/jquery-3.5.1.js"></script>
     <script>
       var username = "Qazeer";
-      var repo = "InfoSec-Notes";
-
       var template_commit_html = `
       <div>
-        <span><b><a href="{commit_url}" target="_blank">{message}</a></b></span><br>
+        <span><b><a href="{commit_url}" target="_blank">{repository} -- {message}</a></b></span><br>
         <span><i>{date}</i></span><br>
         <img src="https://avatars.githubusercontent.com/{author_name}" alt="" width="{avatar_size}" height="{avatar_size}" border-radius="50%"/>
         <span>{author_name}</span><br>
@@ -49,14 +49,15 @@ feature_row:
       </div>
       `;
 
-      jQuery.getJSON("https://api.github.com/repos/" + username + "/" + repo + "/commits", function(data) {
-        $.each(data, function(idx, commit) {
+      jQuery.getJSON("https://api.github.com/search/commits?q=author:" + username + "&sort=author-date&order=desc&page=1", function(data) {
+        $.each(data.items, function(idx, commit) {
 
           if (idx >= 5) {
             return false;
           }
 
           let commit_info = {
+            "repository": commit.repository.full_name,
             "message": commit.commit.message,
             "commit_url": commit.html_url,
             "date": commit.commit.author.date,
