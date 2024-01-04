@@ -19,8 +19,6 @@ data) whenever possible.​
 <br><br> Areas of persistence covered: fully or partially hidden objects
 (detected using replication data queried through `DRS`), SIDHistory &
 primaryGroupID persistence, ACL / GPO / AD CS / Kerberos based persistence, ...
-<br> More information on the project will be shared following the
-[SANS DFIR 2022 Summit](https://www.sans.org/cyber-security-training-events/digital-forensics-summit-2022/).
 <br><br>
 <i class="fab fa-fw fa-github" aria-hidden="true"></i> [Qazeer/FarsightAD](https://github.com/Qazeer/FarsightAD)
 
